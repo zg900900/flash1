@@ -28,6 +28,7 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
+        # Use npm ci for reproducible builds, fallback to npm install if lock file is missing
         run: npm ci || npm install
 
       - name: Build

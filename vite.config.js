@@ -4,6 +4,7 @@ import { resolve } from 'path';
 import react from '@vitejs/plugin-react';
 
 // Optional: used to set base path for deployments (e.g., GitHub Pages /zg900900/flash1)
+// Default '/' for local dev. Set PUBLIC_PATH="/zg900900/flash1" for GitHub Pages deployment.
 const PUBLIC_PATH = process.env.PUBLIC_PATH || '/';
 
 export default defineConfig({
